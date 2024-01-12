@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(248, 226, 187)
+}
+
+.main_header {
+    height: 50px;
+    width: 100%;
+    background-color: orange;
+}
+.nav_list{
+    list-style: None;
+    display: flex;
+}
+.nav_btn{
+    margin: 10px;
+}
+.nav_btn a{
+    text-decoration: None;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.nav_btn a:hover{
+    color: aqua;
+}
