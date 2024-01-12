@@ -46,7 +46,8 @@ body{
     background-color: aqua;
     border: 0px;
     padding: 5px;
-    color: red;
+    color: black;
+    font-weight: bold;
 }
 .register_btn {
     margin-left: 650px;

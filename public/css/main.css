@@ -30,3 +30,21 @@ body{
 .nav_btn a:hover{
     color: aqua;
 }
+
+.form{
+    margin-top: 25px;
+}
+.add-product{
+    background-color: rgb(178, 178, 253);
+    color: black;
+    font-weight: bolder;
+    border: 0px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.add_product_btn{
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(251, 192, 84);
+}

@@ -2,15 +2,10 @@ const express = require('express');
 
 const router = express.Router();
 
-router.get('/contact-us',(req,res,next) => {
-    res.status(200).sendFile('contact-us.html',{
-        root:'views'
-    })
-})
+const contactController = require('../controllers/constact-us')
 
-router.post('/contact-us',(req,res,next) => {
-    console.log(req.body);
-    res.redirect('/success')
-})
+router.get('/contact-us',contactController.getContact)
+
+router.post('/contact-us',contactController.postContact)
 
 module.exports = router;
