@@ -1,3 +1,6 @@
+const Product = require('../models/product')
+
+
 exports.getAdd_product = (req,res,next) => {
     res.status(200).sendFile('product.html',{
         root:'views'
@@ -5,6 +8,7 @@ exports.getAdd_product = (req,res,next) => {
 }
 
 exports.postAdd_product = (req,res,next) => {
-    console.log(req.body);
+    const product = new Product(req.body.addproduct);
+    product.save()
     res.redirect('/')
 }
